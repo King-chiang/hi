@@ -67,3 +67,65 @@
 //	return 0;
 // } 
 //俺不会，算了，拜拜
+
+
+//蓝桥刷题
+
+//int n,m,count,book[101][101];
+//char a[101][101];
+//
+//void dfs(int x,int y)
+//{
+//	book[1][1]=1;
+//	int next[4][2]={{1,-1},//右上
+//	                {1,1},//右下
+//					{-1,1},//左下
+//					{-1,-1},//左上
+//					};
+//	
+//	int tx,ty,k,i=0;
+//	for(k=0;k<=3;k++)
+//	{
+//		tx=x+next[k][0];
+//		ty=y+next[k][1];
+//		if(tx<1 || tx>n ||ty<1 ||ty>m)
+//		continue;
+//		if(a[tx][ty]==a[x][y])
+//		{
+//			count++;
+//		}
+//		else
+//		{
+//			if(book[tx][ty]==0)
+//			{
+//				count=0;
+//				book[tx][ty]=1;
+//				dfs(tx,ty);
+//				book[tx][ty]=0;
+//			}
+//		}	
+//	} 
+//	
+//	return;
+//}
+//
+//int main()
+//{
+//	int i,j;
+//	
+//	scanf("%d%d",&n,&m);
+//	for(i=1;i<=n;i++)
+//	{
+//		for(j=1;j<=m;j++)
+//		scanf("%c",&a[i][j]);
+//		printf("\n");
+//	}
+//	
+//	int startx=1,starty=1;
+//				
+//	dfs(startx,starty);
+//	
+//	 printf("%d",count);
+//	
+//	return 0;
+//} 
